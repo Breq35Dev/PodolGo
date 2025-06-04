@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit - PodolGo</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" class="logo-icon" alt="Logo">
+                <span>PodolGo</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html" class="active">Produit</a></li>
+                <li><a href="conception.html">Conception</a></li>
+                <li><a href="composants.html">Composants</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Notre Produit</h1>
+        <p>Découvrez le podomètre PodolGo en détail</p>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <div class="product-image-container">
+                            <img src="images/logo.svg" alt="PodolGo Produit" class="product-main-image">
+                            <div class="product-image-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h2>PodolGo - Le podomètre connecté</h2>
+                        <p class="product-description">
+                            Le PodolGo est un podomètre qui affiche vos pas en temps réel sur un écran OLED intégré. Compact, léger et facile à utiliser, il est l'accessoire idéal pour suivre votre activité quotidienne.
+                        </p>
+                        <div class="product-features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12,2 L12,6 M12,18 L12,22 M6,12 L2,12 M22,12 L18,12 M12,16 C14.2,16 16,14.2 16,12 C16,9.8 14.2,8 12,8 C9.8,8 8,9.8 8,12 C8,14.2 9.8,16 12,16 Z" stroke="#4A90E2" stroke-width="2" fill="none"></path>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Comptage et calcul</h3>
+                                    <p>Mesure de chaque pas et calcul des calories grâce à nos capteurs.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M4,4 L20,4 L20,20 L4,20 L4,4 Z M8,2 L8,6 M16,2 L16,6 M4,10 L20,10" stroke="#0066CC" stroke-width="2" fill="none"></path>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Alimentation pratique</h3>
+                                    <p>Fonctionne avec une pile standard remplaçable pour une utilisation longue durée.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12,0 L12,12 L17,7 L12,2 M12,24 L12,12 L17,17 L12,22" stroke="#40E0D0" stroke-width="2" fill="none"></path>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Affichage OLED</h3>
+                                    <p>Écran qui affiche vos statistiques d'activité.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-specs">
+                            <h3>Spécifications techniques</h3>
+                            <div class="specs-row">
+                                <span class="spec-item"><strong>Capteur</strong>: Accéléromètre haute précision 3 axes</span>
+                                <span class="spec-item"><strong>Écran</strong>: OLED monochrome 0.96" à contraste élevé</span>
+                                <span class="spec-item"><strong>Batterie</strong>: Pile CR2032 remplaçable (autonomie 6+ mois)</span>
+                                <span class="spec-item"><strong>Étanchéité</strong>: IP67 (résistant à l'eau et à la poussière)</span>
+                                <span class="spec-item"><strong>Légèreté</strong>: Design compact et ergonomique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Comment utiliser votre PodolGo</h2>
+                <div class="usage-steps">
+                    <div class="usage-step">
+                        <div class="step-number">1</div>
+                        <h3>Mise en marche</h3>
+                        <p>Insérez la pile et appuyez sur le bouton central pour activer l'appareil. L'écran OLED s'allumera et affichera le logo PodolGo.</p>
+                    </div>
+                    <div class="usage-step">
+                        <div class="step-number">2</div>
+                        <h3>Port de l'appareil</h3>
+                        <p>Attachez le PodolGo à votre vêtement ou placez-le dans votre poche. L'appareil commencera automatiquement à compter vos pas.</p>
+                    </div>
+                    <div class="usage-step">
+                        <div class="step-number">3</div>
+                        <h3>Consultation des données</h3>
+                        <p>Les informations s'affichent en temps réel sur l'écran OLED. Appuyez sur le bouton pour faire défiler les différentes statistiques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="60" height="60" viewBox="0 0 150 150">
+                    <path d="M75,25 C45,25 20,50 20,80 C20,110 45,135 75,135 C105,135 130,110 130,80 C130,50 105,25 75,25 Z" fill="none" stroke="#fff" stroke-width="5"></path>
+                    <path d="M75,40 C53,40 35,58 35,80 C35,102 53,120 75,120 C97,120 115,102 115,80 C115,58 97,40 75,40 Z" fill="none" stroke="#fff" stroke-width="3"></path>
+                    <path d="M45,80 Q60,60 75,80 Q90,100 105,80" fill="none" stroke="#fff" stroke-width="3"></path>
+                </svg>
+                <span>PodolGo</span>
+            </div>
+        </div>
+        <div class="social-links-footer">
+            <a href="https://www.youtube.com/@NEYROX_001" class="social-link" target="_blank" rel="noopener" title="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.388 3.5 12 3.5 12 3.5s-7.388 0-9.386.566a2.997 2.997 0 0 0-2.112 2.12C0 8.19 0 12 0 12s0 3.81.502 5.814a2.997 2.997 0 0 0 2.112 2.12C4.612 20.5 12 20.5 12 20.5s7.388 0 9.386-.566a2.997 2.997 0 0 0 2.112-2.12C24 15.81 24 12 24 12s0-3.81-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#FF0000"/>
+                </svg>
+            </a>
+            <a href="https://guns.lol/zfusions" class="social-link" target="_blank" rel="noopener" title="guns.lol">
+                <img src="images/gun.svg" alt="guns.lol" width="20" height="20" style="display:inline-block; vertical-align:middle;" />
+            </a>
+            <a href="https://discord.gg/fusionsgfx" class="social-link" target="_blank" rel="noopener" title="Discord">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.0371A19.7363 19.7363 0 0 0 3.677 4.3698a.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1047c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276c-.598.3428-1.2205.6447-1.8733.8923a.0766.0766 0 0 0-.0407.1057c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6601a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0957 2.1568 2.4189 0 1.3333-.9555 2.419-2.1569 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0957 2.1568 2.4189 0 1.3333-.946 2.419-2.1568 2.419z" fill="#5865F2"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PodolGo. Tous droits réservés. | Projet PodolGo. STI2D2 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conception - PodolGo</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" class="logo-icon" alt="Logo">
+                <span>PodolGo</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="conception.html" class="active">Conception</a></li>
+                <li><a href="composants.html">Composants</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Conception du PodolGo</h1>
+        <p>Découvrez le processus de développement de notre podomètre innovant</p>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>PodolGo.</h2>
+                <div style="text-align: center; margin: 3rem auto;">
+                    <img src="images/ass_finale.png" alt="PodolGo - Version finale" style="max-width: 80%; display: block; margin: 0 auto; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); border-radius: 15px;">
+                </div>
+                <p class="luxury-description" style="text-align: center; font-size: 1.8rem; max-width: 80%; margin: 0 auto 2rem;">Découvrez notre podomètre PodolGo dans sa version finale - Un design élégant et sophistiqué qui allie technologie de pointe et esthétique premium.</p>
+                <style>
+                    @keyframes float {
+                        0% { transform: translateY(0px); }
+                        50% { transform: translateY(-15px); }
+                        100% { transform: translateY(0px); }
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Idée de conception</h2>
+                <div class="future-images-container" style="margin: 2rem auto; min-height: 200px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div>
+                        <img src="images/podolgo_design3.png" alt="Boîtier du PodolGo - Vue 3D" style="width: 100%; height: 300px; object-fit: contain; border-radius: 10px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);">
+                    </div>
+                    <div>
+                        <img src="images/ass2.png" alt="PodolGo - Vue alternative" style="width: 100%; height: 300px; object-fit: contain; border-radius: 10px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Notre processus de conception</h2>
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Étude et recherche</h3>
+                            <p>Nous avons tout d'abord chercher les composants et comment mettre tout en forme en créeant un chahier des charges.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Prototypage</h3>
+                            <p>Après la phase d'étude, nous avons développé plusieurs prototypes pour tester différentes configurations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Tests et optimisation</h3>
+                            <p>Nous avons tester plusieurs desings de boite et nous avons choisis une forme final.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Finalisation</h3>
+                            <p>Après avoir intégré tous les retours des tests, nous avons finalisé la conception du PodolGo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Caractéristiques de conception</h2>
+                <div class="design-grid">
+                    <div class="design-card">
+                        <div class="design-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24">
+                                <path d="M3,12 L21,12 M12,3 L12,21" stroke="#4A90E2" stroke-width="2" fill="none"></path>
+                            </svg>
+                        </div>
+                        <h3>Design</h3>
+                        <p>Le design du PodolGo a été pensé pour essayé de ne pas être trop gros lors de l'utilisation quotidienne. Malheureusement le podomètres est très gros du a ces composants.</p>
+                    </div>
+                    <div class="design-card">
+                        <div class="design-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9" stroke="#40E0D0" stroke-width="2" fill="none"></circle>
+                                <path d="M12,8 L12,12 L15,15" stroke="#40E0D0" stroke-width="2" fill="none"></path>
+                            </svg>
+                        </div>
+                        <h3>Efficacité énergétique</h3>
+                        <p>L'énergie parvient d'une pile CR2023.</p>
+                    </div>
+                    <div class="design-card">
+                        <div class="design-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24">
+                                <path d="M3,6 L21,6 L21,18 L3,18 L3,6 Z M7,6 L7,18 M17,6 L17,18" stroke="#4A90E2" stroke-width="2" fill="none"></path>
+                            </svg>
+                        </div>
+                        <h3>Modularité</h3>
+                        <p>PodolGo est assez gros mais il peux être facilement démontable pour changer la pile ect...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Matériaux utilisés</h2>
+                <div class="materials-grid content-bubble-grid">
+                    <div class="material-item">
+                        <h3>Boîtier</h3>
+                        <p>Le boîtier du PodolGo est fabriqué a l'aide d'une impirante 3d platique noir.</p>
+                    </div>
+                    <div class="material-item">
+                        <h3>Bluetooth</h3>
+                        <p>Le bluetooth permet de voir nos pas sur notre application en temps réel.</p>
+                    </div>
+                    <div class="material-item">
+                        <h3>Circuit imprimé</h3>
+                        <p>Le circuit imprimé est conçu pour optimiser l'espace pour faire ple plus petit possible.</p>
+                    </div>
+                    <div class="material-item">
+                        <h3>Conception</h3>
+                        <p>Le boitier est démontable pour changer la pile pour garder une efficacité a long therme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="60" height="60" viewBox="0 0 150 150">
+                    <path d="M75,25 C45,25 20,50 20,80 C20,110 45,135 75,135 C105,135 130,110 130,80 C130,50 105,25 75,25 Z" fill="none" stroke="#fff" stroke-width="5"></path>
+                    <path d="M75,40 C53,40 35,58 35,80 C35,102 53,120 75,120 C97,120 115,102 115,80 C115,58 97,40 75,40 Z" fill="none" stroke="#fff" stroke-width="3"></path>
+                    <path d="M45,80 Q60,60 75,80 Q90,100 105,80" fill="none" stroke="#fff" stroke-width="3"></path>
+                </svg>
+                <span>PodolGo</span>
+            </div>
+        </div>
+        <div class="social-links-footer">
+            <a href="https://www.youtube.com/@NEYROX_001" class="social-link" target="_blank" rel="noopener" title="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.388 3.5 12 3.5 12 3.5s-7.388 0-9.386.566a2.997 2.997 0 0 0-2.112 2.12C0 8.19 0 12 0 12s0 3.81.502 5.814a2.997 2.997 0 0 0 2.112 2.12C4.612 20.5 12 20.5 12 20.5s7.388 0 9.386-.566a2.997 2.997 0 0 0 2.112-2.12C24 15.81 24 12 24 12s0-3.81-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#FF0000"/>
+                </svg>
+            </a>
+            <a href="https://guns.lol/zfusions" class="social-link" target="_blank" rel="noopener" title="guns.lol">
+                <img src="images/gun.svg" alt="guns.lol" width="20" height="20" style="display:inline-block; vertical-align:middle;" />
+            </a>
+            <a href="https://discord.gg/fusionsgfx" class="social-link" target="_blank" rel="noopener" title="Discord">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.0371A19.7363 19.7363 0 0 0 3.677 4.3698a.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1047c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276c-.598.3428-1.2205.6447-1.8733.8923a.0766.0766 0 0 0-.0407.1057c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6601a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0957 2.1568 2.4189 0 1.3333-.9555 2.419-2.1569 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0957 2.1568 2.4189 0 1.3333-.946 2.419-2.1568 2.419z" fill="#5865F2"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PodolGo. Tous droits réservés. | Projet PodolGo. STI2D2 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

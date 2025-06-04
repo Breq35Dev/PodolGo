@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composants - PodolGo</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" class="logo-icon" alt="Logo">
+                <span>PodolGo</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="conception.html">Conception</a></li>
+                <li><a href="composants.html" class="active">Composants</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Composants du PodolGo</h1>
+        <p>Explorez les éléments techniques qui constituent notre podomètre</p>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Vue d'ensemble des composants</h2>
+                <div class="components-grid">
+                <div class="component-card">
+  <div class="component-content">
+    <div class="component-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="2" stroke="#0066CC" stroke-width="2" fill="none"></rect>
+        <circle cx="12" cy="12" r="4" stroke="#0066CC" stroke-width="2" fill="none"></circle>
+      </svg>
+    </div>
+    <h3>ESP32</h3>
+    <p>Le cerveau du PodolGo est un microcontrôleur ESP32 à faible consommation d'énergie.</p>
+    <ul class="component-specs">
+      <li>Fréquence : 240 MHz</li>
+      <li>Mémoire flash : 448 Kibits</li>
+      <li>Volt : 3.3V</li>
+      <li>Consommation : &lt;78,32 mW</li>
+    </ul>
+  </div>
+  <div class="component-image-container">
+    <img src="images/ESP32.jpg" alt="ESP32" class="component-image" />
+  </div>
+</div>
+                <div class="component-card">
+  <div class="component-content">
+    <div class="component-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24">
+        <path d="M4,4 L20,4 L20,20 L4,20 L4,4 Z" stroke="#4A90E2" stroke-width="2" fill="none"></path>
+        <path d="M8,8 L16,8 L16,16 L8,16 L8,8 Z" stroke="#4A90E2" stroke-width="2" fill="none"></path>
+      </svg>
+    </div>
+    <h3>LSM6DS3 - Grove 6-Axis Accelerometer & Gyroscope</h3>
+    <p>Un accéléromètre 3 axes qui comptes les pas.</p>
+    <ul class="component-specs">
+      <li>Plage de mesure : ±2g, ±4g, ±8g, ±16g</li>
+      <li>Compatibilité : Arduino / Raspberry Pi</li>
+      <li>Consommation : 1.25 mA en mode actif</li>
+      <li>Interface : I2C</li>
+    </ul>
+  </div>
+  <div class="component-image-container">
+    <img src="images/acc.jpg" alt="LSM6DS3 - Grove 6-Axis Accelerometer & Gyroscope" class="component-image" />
+  </div>
+</div>
+                <div class="component-card">
+  <div class="component-content">
+    <div class="component-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24">
+        <rect x="4" y="6" width="16" height="12" stroke="#40E0D0" stroke-width="2" fill="none"></rect>
+        <path d="M7,10 L17,10 L17,14 L7,14 L7,10 Z" stroke="#40E0D0" stroke-width="2" fill="none"></path>
+      </svg>
+    </div>
+    <h3>Grove - OLED Display 0.96" (SSD1315)</h3>
+    <p>L'écran OLED monochrome de 0.96 pouces offre une excellente lisibilité même en plein soleil. Sa résolution de 128x64 pixels permet d'afficher clairement toutes les informations utiles.</p>
+    <ul class="component-specs">
+      <li>Taille : 0.96 pouces</li>
+      <li>Résolution : 128x64 pixels</li>
+      <li>Contrôleur : SSD1315</li>
+      <li>Interface : I2C</li>
+      <li>Consommation : 20mA 3.3V / 5V en fonctionnement</li>
+    </ul>
+  </div>
+  <div class="component-image-container">
+    <img src="images/Oled.jpg" alt="Grove - OLED Display 0.96 (SSD1315)" class="component-image" />
+  </div>
+</div>
+                <div class="component-card">
+  <div class="component-content">
+    <div class="component-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8" stroke="#FF6B6B" stroke-width="2" fill="none"></circle>
+        <path d="M12,8 L12,12 L16,12" stroke="#FF6B6B" stroke-width="2" fill="none"></path>
+      </svg>
+    </div>
+    <h3>Alimentation</h3>
+    <p>Le PodolGo est alimenté par une pile bouton CR2032 standard, facilement remplaçable. Un circuit de gestion d'alimentation optimise la consommation pour maximiser l'autonomie.</p>
+    <ul class="component-specs">
+      <li>Type de pile : CR2032 (3V)</li>
+      <li>Capacité : 220mAh</li>
+      <li>Autonomie : Variable selon l'utilisation</li>
+      <li>Consommation moyenne : &lt;0.5mA</li>
+    </ul>
+  </div>
+  <div class="component-image-container">
+    <img src="images/Pile.jpg" alt="Pile bouton CR2032" class="component-image" />
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-bubble-container">
+        <div class="product-bubble">
+            <div class="bubble-content">
+                <h2>Schéma de fonctionnement</h2>
+                <div class="diagram-container">
+                <div class="diagram-description">
+                    <p>Le circuit électronique du PodolGo est conçu pour optimiser l'efficacité énergétique tout en assurant des performances fiables. Voici le fonctionnement global du système :</p>
+                    <ol class="diagram-steps">
+                        <li>L'accéléromètre détecte les mouvements et envoie les données au microcontrôleur</li>
+                        <li>Le microcontrôleur traite ces données à l'aide d'algorithmes avancés pour déterminer s'il s'agit d'un pas</li>
+                        <li>Le compteur de pas est incrémenté et les calories sont calculées en fonction de paramètres préétablis</li>
+                        <li>Ces informations sont affichées sur l'écran OLED en temps réel</li>
+                        <li>Le système entre en mode basse consommation entre les mesures pour économiser l'énergie</li>
+                    </ol>
+                </div>
+                <div class="diagram-image">
+                    <!-- Ici, on pourrait insérer un schéma technique du circuit -->
+                    <div class="diagram-placeholder">
+                        <svg width="100%" height="300" viewBox="0 0 600 300">
+                            <!-- Stylisation du schéma simplifié -->
+                            <rect x="50" y="120" width="120" height="60" rx="5" stroke="#0066CC" stroke-width="2" fill="none"></rect>
+                            <text x="110" y="155" text-anchor="middle" font-size="14">Accéléromètre</text>
+                            
+                            <rect x="240" y="100" width="140" height="100" rx="5" stroke="#4A90E2" stroke-width="2" fill="none"></rect>
+                            <text x="310" y="155" text-anchor="middle" font-size="14">Microcontrôleur</text>
+                            
+                            <rect x="450" y="120" width="120" height="60" rx="5" stroke="#40E0D0" stroke-width="2" fill="none"></rect>
+                            <text x="510" y="155" text-anchor="middle" font-size="14">Écran OLED</text>
+                            
+                            <rect x="240" y="250" width="140" height="40" rx="5" stroke="#FF6B6B" stroke-width="2" fill="none"></rect>
+                            <text x="310" y="275" text-anchor="middle" font-size="14">Alimentation</text>
+                            
+                            <!-- Connexions -->
+                            <path d="M170,150 L240,150" stroke="#666" stroke-width="2"></path>
+                            <path d="M380,150 L450,150" stroke="#666" stroke-width="2"></path>
+                            <path d="M310,200 L310,250" stroke="#666" stroke-width="2"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="60" height="60" viewBox="0 0 150 150">
+                    <path d="M75,25 C45,25 20,50 20,80 C20,110 45,135 75,135 C105,135 130,110 130,80 C130,50 105,25 75,25 Z" fill="none" stroke="#fff" stroke-width="5"></path>
+                    <path d="M75,40 C53,40 35,58 35,80 C35,102 53,120 75,120 C97,120 115,102 115,80 C115,58 97,40 75,40 Z" fill="none" stroke="#fff" stroke-width="3"></path>
+                    <path d="M45,80 Q60,60 75,80 Q90,100 105,80" fill="none" stroke="#fff" stroke-width="3"></path>
+                </svg>
+                <span>PodolGo</span>
+            </div>
+        </div>
+        <div class="social-links-footer">
+            <a href="https://www.youtube.com/@NEYROX_001" class="social-link" target="_blank" rel="noopener" title="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.388 3.5 12 3.5 12 3.5s-7.388 0-9.386.566a2.997 2.997 0 0 0-2.112 2.12C0 8.19 0 12 0 12s0 3.81.502 5.814a2.997 2.997 0 0 0 2.112 2.12C4.612 20.5 12 20.5 12 20.5s7.388 0 9.386-.566a2.997 2.997 0 0 0 2.112-2.12C24 15.81 24 12 24 12s0-3.81-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#FF0000"/>
+                </svg>
+            </a>
+            <a href="https://guns.lol/zfusions" class="social-link" target="_blank" rel="noopener" title="guns.lol">
+                <img src="images/gun.svg" alt="guns.lol" width="20" height="20" style="display:inline-block; vertical-align:middle;" />
+            </a>
+            <a href="https://discord.gg/fusionsgfx" class="social-link" target="_blank" rel="noopener" title="Discord">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.0371A19.7363 19.7363 0 0 0 3.677 4.3698a.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1047c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276c-.598.3428-1.2205.6447-1.8733.8923a.0766.0766 0 0 0-.0407.1057c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6601a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0957 2.1568 2.4189 0 1.3333-.9555 2.419-2.1569 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0957 2.1568 2.4189 0 1.3333-.946 2.419-2.1568 2.419z" fill="#5865F2"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PodolGo. Tous droits réservés. | Projet PodolGo. STI2D2 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
